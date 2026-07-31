@@ -6,13 +6,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #ffecc7;
-  --ifm-color-primary-dark: #e6d4b3;
-  --ifm-color-primary-darker: #d9c9a9;
-  --ifm-color-primary-darkest: #b3a58b;
-  --ifm-color-primary-light: #fff0ce;
-  --ifm-color-primary-lighter: #fff2d5;
-  --ifm-color-primary-lightest: #fff7e8;
+  --ifm-color-primary: #1a1a1a;
+  --ifm-color-primary-dark: #171717;
+  --ifm-color-primary-darker: #161616;
+  --ifm-color-primary-darkest: #121212;
+  --ifm-color-primary-light: #333333;
+  --ifm-color-primary-lighter: #404040;
+  --ifm-color-primary-lightest: #595959;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -35,8 +35,8 @@
   height: auto;
   max-width: 100%;
   margin: 1rem auto 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  /* border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px; */
 }
 
 .manual-inline-icon {
@@ -47,9 +47,37 @@
   vertical-align: middle;
 }
 
+/* Give the documentation sidebar a more relaxed reading rhythm. */
+.theme-doc-sidebar-menu .menu__link {
+  padding-block: 8px;
+  line-height: 1.5;
+}
+
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__link {
+  padding-block: 6px;
+}
+
 /* Add comfortable horizontal breathing room to the main document content. */
 .theme-doc-markdown {
   padding-inline: clamp(48px, 8vw, 128px);
+}
+
+/* Give second-level headings a subtle visual anchor. */
+.theme-doc-markdown h2 {
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.theme-doc-markdown h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-300);
 }
 
 /* Let manual tables use the full width of the document reading area. */
