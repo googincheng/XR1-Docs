@@ -48,7 +48,7 @@ def convert_images(text: str) -> str:
             return ""
         filename = source.group(1)
         return (
-            f'<img src="/img/manual/{filename}" '
+            f'<ManualImage src="/img/manual/{filename}" '
             'alt="XRecer 操作界面" width="600"/>'
         )
 

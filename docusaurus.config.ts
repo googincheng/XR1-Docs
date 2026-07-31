@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://googincheng.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/XR1-Docs/',
+  baseUrl: process.env.NODE_ENV === 'production' ? '/XR1-Docs/' : '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

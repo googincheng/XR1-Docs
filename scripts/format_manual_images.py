@@ -11,7 +11,7 @@ from PIL import Image
 
 
 IMG_RE = re.compile(
-    r'<img src="/img/manual/(?P<name>image\d+\.png)" '
+    r'<ManualImage src="/img/manual/(?P<name>image\d+\.png)" '
     r'alt="(?P<alt>[^"]+)" (?P<size>width|height)="(?P<value>\d+)"\s*/>'
 )
 LIST_RE = re.compile(r"^(?P<indent>\s*)(?P<marker>(?:\d+\.\s+|-\s+))(?P<body>.*)$")
@@ -37,7 +37,7 @@ def format_tag(match: re.Match[str], image_path: Path) -> tuple[str, bool]:
     width, inline = image_width(image_path, match.group("name"), current)
     class_name = "manual-inline-icon" if inline else "manual-figure"
     tag = (
-        f'<img className="{class_name}" '
+        f'<ManualImage className="{class_name}" '
         f'src="/img/manual/{match.group("name")}" '
         f'alt="{match.group("alt")}" width="{width}"/>'
     )
