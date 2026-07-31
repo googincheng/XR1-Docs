@@ -49,7 +49,7 @@
 
 /* Add comfortable horizontal breathing room to the main document content. */
 .theme-doc-markdown {
-  padding-inline: clamp(32px, 6vw, 96px);
+  padding-inline: clamp(48px, 8vw, 128px);
 }
 
 /* Let manual tables use the full width of the document reading area. */
@@ -69,6 +69,6 @@
 
 @media (max-width: 768px) {
   .theme-doc-markdown {
-    padding-inline: 16px;
+    padding-inline: 20px;
   }
 }
