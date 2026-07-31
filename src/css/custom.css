@@ -72,3 +72,9 @@
     padding-inline: 20px;
   }
 }
+
+/* Keep previous/next document navigation visually lightweight. */
+.pagination-nav__link {
+  border: 0;
+  box-shadow: none;
+}
