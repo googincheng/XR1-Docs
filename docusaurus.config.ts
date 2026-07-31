@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://xrecer.com',
+  url: 'https://googincheng.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/XR1-Docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '', // Usually your GitHub org/user name.
-  projectName: '', // Usually your repo name.
+  organizationName: 'googincheng', // Usually your GitHub org/user name.
+  projectName: 'XR1-Docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -61,9 +61,9 @@ const config: Config = {
         //   onInlineAuthors: 'warn',
         //   onUntruncatedBlogPosts: 'warn',
         // },
-        // theme: {
-        //   customCss: './src/css/custom.css',
-        // },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
       } satisfies Preset.Options,
     ],
   ],
