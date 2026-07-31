@@ -1,0 +1,103 @@
+---
+sidebar_position: 7
+slug: /looper
+title: LOOPER
+---
+
+# LOOPER
+
+Looper可以提前或现场录制您的演奏，不断的叠加不同的乐器、段落。在您一人演出时，也可营造极为丰富的现场听感。
+
+## 添加Looper
+
+<img src="/img/manual/image54.png" alt="XRecer 操作界面" width="600"/>找到Looper Effect并添加至效果链的任意位置，即可录制叠加了不同效果的音频信号
+
+<img src="/img/manual/image55.png" alt="XRecer 操作界面" width="600"/>
+
+## Looper
+
+点击Looper Effect，进入录制界面。可以看到下方提供了多种录制操作，并默认与对应位置的踩钉绑定。
+
+1.  ### REC：
+
+    -   <img src="/img/manual/image56.png" alt="XRecer 操作界面" width="600"/>初始状态：按钮为REC，点击开始录制
+
+    -   初次录制中：按钮为Overdub，点击保存并播放音轨，并开始新的叠录
+
+    -   有音轨&非录制中&非播放中：按钮为REC，点击清空旧音轨，重新开始录制
+
+    -   有音轨&非录制中&播放中：按钮为Overdub，点击在当前位置开始叠录
+
+    -   有音轨&录制中&播放中（叠录中）：点击停止之前的叠录，将前面的音轨合并后播放，并开始新的叠录
+
+2.  ### Playback：
+
+    -   <img src="/img/manual/image57.png" alt="XRecer 操作界面" width="600"/>初始状态：按钮为Playback，点击开始播放。如果没有已录制的音轨，此按钮禁用
+
+    -   非录制中&播放中：按钮为Stop，点击停止播放
+
+    -   录制中&非播放中：按钮为Playback，点击停止录制并开始播放
+
+    -   录制中&播放中：按钮为Stop，点击停止播放
+
+3.  ### Delete：
+
+    -   <img src="/img/manual/image58.png" alt="XRecer 操作界面" width="600"/>清空本次的所有录制内容
+
+    -   如果当前在播放状态/录制状态，停止播放及录制
+
+4.  ### Doubler
+
+    -   <img src="/img/manual/image59.png" alt="XRecer 操作界面" width="600"/>非录制中&非播放中：点击将当前录制的音轨进行复制一份。
+
+    -   非录制中&播放中：点击将当前录制的音轨进行复制一份，并延长播放时间。
+
+    -   录制中&非播放中：点击停止并保存录制，播放上一段录制并开始叠录
+
+    -   录制中&播放中（叠录中）：点击后，如果叠录的时长超出原音轨长度，将自动复制并延长原音轨。这样您可以叠加一段4小节的旋律在1小节重复4次的音轨上，不受原有音轨长度的影响
+
+    -   在复制后，可以在任意位置点击Cut，删去该位置之后的音频，这样可以不受固定长度的限制
+
+5.  ### <img src="/img/manual/image60.png" alt="XRecer 操作界面" width="600"/>Single Play
+
+    -   非录制中&非播放中：点击开始播放一次当前音轨
+
+    -   非录制中&播放中：点击将在当前播放完音轨后自动结束，而不是直接停止
+
+    -   录制中&非播放中：点击停止并保存录制，并播放一次合并后的音轨
+
+    -   录制中&播放中（叠录中）：点击停止并保存录制，并在播放完上一段音轨后停止播放
+
+6.  ### Half Time
+
+    -   <img src="/img/manual/image61.png" alt="XRecer 操作界面" width="600"/>点击设置播放和录制方式为半速
+
+7.  ### Short Cut
+
+    -   <img src="/img/manual/image62.png" alt="XRecer 操作界面" width="600"/>点击从当前播放位置开始录制替换音轨，再次点击结束
+
+## 参数设置
+
+1.  Playback Level：-50dB-0
+
+2.  Doubler Level：-50dB-0，如果设为-5，则每次叠加降低上一段音量-5db
+
+3.  High Pass：频率范围，弱化低于设定的频率
+
+4.  Low Pass：频率范围，弱化高于设定的频率
+
+5.  Threshold: 开启后，音量高于Threshold才会开始录制，而不是点击REC就立刻录制
+
+6.  Quantize：开启后，将自动修剪所录制的音轨首尾，对齐所设置的节拍
+
+## Loop File
+
+录制好的Looper可以保存为Loop File，最多支持8个。
+
+### 保存步骤：
+
+1.  <img src="/img/manual/image63.png" alt="XRecer 操作界面" width="600"/>点击上方的Loop File
+
+2.  <img src="/img/manual/image20.png" alt="XRecer 操作界面" width="600"/>选择File位置
+
+3.  在效果链上使用Loop File

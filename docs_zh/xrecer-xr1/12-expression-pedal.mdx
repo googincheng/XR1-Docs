@@ -1,0 +1,59 @@
+---
+sidebar_position: 13
+slug: /expression-pedal
+title: Expression Pedal
+---
+
+# Expression Pedal
+
+Expression Pedal能够输出连续的控制信号，因此常用于精确的控制参数值变化，可以实现哇音、延音等现场效果。
+
+## Expression Pedal类型
+
+XR1支持的Expression Pedal类型：
+
+1.  Dual Foot-switches
+
+2.  TRS Expression Pedal
+
+3.  TRS Expression Pedal + Switch
+
+4.  Single Foot-switches
+
+## 连接Expression Pedal
+
+1.  使用TRS线连接Expression Pedal
+
+2.  请参考第三方Expression Pedal说明书及配线进行连接，支持Single TRS Cable、Dual TRS Cables、Y-Cable连接
+
+## 校准Expression Pedal
+
+1.  <img src="/img/manual/image81.png" alt="XRecer 操作界面" width="600"/>打开Global IO
+
+2.  点击连接EXP 1/2
+
+3.  点击Calibrate
+
+4.  将Expression Pedal从低部推到顶部后，Xrecer会根据信号自动校准最大最小值
+
+5.  点击保存
+
+6.  如果您使用了Dual Channel Expression Pedal/多个Expression Pedal，需要逐一校准
+
+## Assign Expression Pedal
+
+1.  <img src="/img/manual/image82.png" alt="XRecer 操作界面" width="600"/>在Effect Parameter界面点击 更多-Expression Pedal
+
+2.  选择您要绑定的参数，设置Expression Pedal和Effect参数值的映射关系
+
+3.  <img src="/img/manual/image83.png" alt="XRecer 操作界面" width="600"/>数值参数：
+
+    -   Min：默认为0%，当Expression Peda的position为x%时， 对应参数值为其最小值
+
+    -   Max：默认为100%，当Expression Peda的position为x%时， 对应参数值为其最大值
+
+4.  开关参数：
+
+    -   Min：默认为0%，当Expression Peda的position &lt; x%时，旁通此Effect
+
+    -   Max：默认为100%，当Expression Peda的position &gt; x%时，激活此Effect

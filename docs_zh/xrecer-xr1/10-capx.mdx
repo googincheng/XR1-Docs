@@ -1,0 +1,87 @@
+---
+sidebar_position: 11
+slug: /capx
+title: CapX
+---
+
+# CapX
+
+通过CapX可以将您心仪的Analog Tone使用AI训练，保存至XR1带到现场演出。
+
+## 步骤
+
+#### 按照界面提示正确连接设备（连接Tube AMP时请注意输入和输出电压的要求，避免损坏设备）
+
+<img src="/img/manual/image69.png" alt="XRecer 操作界面" width="600"/> <img src="/img/manual/image70.png" alt="XRecer 操作界面" width="600"/>
+
+<img src="/img/manual/image71.png" alt="XRecer 操作界面" width="600"/> <img src="/img/manual/image72.png" alt="XRecer 操作界面" width="600"/>
+
+1.  #### 采集前请先检查音频信号是否正常，可调整下方参数修正
+
+    -   <img src="/img/manual/image73.png" alt="XRecer 操作界面" width="600"/>Input Level：调整乐器输入的音量，避免削波
+
+    -   Mic In Level：调整麦克风输入的音量，避免削波
+
+    -   Inst Level：监测乐器输入信号电平
+
+    -   Cap Level：监测经过效果处理的输入信号电平
+
+    -   NAM Train：使用由Steven Atkinson开发的Neural AMP Modeler训练
+
+    -   CAPX Train：使用XRECER自主研发的音色捕捉算法进行训练
+
+2.  #### Ready
+
+    -   <img src="/img/manual/image74.png" alt="XRecer 操作界面" width="600"/>训练过程请不要操作设备，若使用麦克风，在Record结束前请保持环境安静
+
+    -   训练失败请尝试调整Gain，避免Wet Signal过小以及Clipping
+
+    -   点击PREV可中断训练，回到SETTING
+
+3.  #### Completed
+
+    -   <img src="/img/manual/image75.png" alt="XRecer 操作界面" width="600"/>CapX：点击使用AI模拟的单块进行试听
+
+    -   Target Device：点击使用外部效果器进行试听
+
+    -   Level：调整输出音频音量大小
+
+    -   Not good Enough，try again：点击重新训练
+
+    -   SAVE：点击将录制的音色保存至File Manager，可在FX Chain上选择并添加此Effect
+
+## 使用CapX/NAM Effect
+
+<img src="/img/manual/image76.png" alt="XRecer 操作界面" width="600"/>在FX Chain-Select Effect中，点击NAM/CapX类别，即可查看本设备所有Effect
+
+## USB Routing
+
+Xrecer提供了16 In & 16 Out出的USB接口。通过右图可以清楚的看到USB音频信号的流转：
+
+### 输出：
+
+1.  <img src="/img/manual/image77.png" alt="XRecer 操作界面" width="600"/>Xrecer的USB OUT 1/2、3/4、5/6（左/右声道）将默认输出MIC IN和INPUT 1/2/3/4的DI Signal
+
+2.  在DAW软件中选择Xrecer的USB OUT 1/2、3/4、5/6（左/右声道）将能获取到对应的DI Signal
+
+3.  其余输出通道您可以通过设置FX Chain的Output，自定义输出哪种音频信号
+
+### 输入：
+
+1.  Xrecer的USB IN 1/2将默认分别输出至Xrecer的OUT 1/2、OUT 3/4（左/右声道）、Phones，这样您如果通过电脑播放伴奏，将无需额外的设置，插上USB线即可
+
+1.  其余输入信号可以通过效果链设置Input，自定义接收哪种音频信号
+
+## DAW设置
+
+1.  <img src="/img/manual/image78.png" alt="XRecer 操作界面" width="600"/>以Garage Band®为例，首先将输入设备设置为Xrecer，如果您需要将信号经过DAW处理后重新发送回Xrecer，请同时将输出设备也设置为Xrecer
+
+2.  <img src="/img/manual/image79.png" alt="XRecer 操作界面" width="600"/>在音轨上设置输入/输出的USB信号通道
+
+3.  此时DAW的音轨即可获取到Xrecer的信号输入
+
+4.  如果您选择的是自定义的通道USB IN（3-16）/OUT（7-16），请确保FX Chain上已设置对应的输入/输出接口
+
+## 驱动安装
+
+Windows下需要安装ASIO驱动，点击下载

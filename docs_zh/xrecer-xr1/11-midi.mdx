@@ -1,0 +1,57 @@
+---
+sidebar_position: 12
+slug: /midi
+title: MIDI
+---
+
+# MIDI
+
+## MIDI Out
+
+<img src="/img/manual/image80.png" alt="XRecer 操作界面" width="600"/>在FX Chain首页，点击 更多-MIDI Out 进入MIDI输出设置界面。
+
+#### Xrecer支持触发MIDI信号输出的有三个位置：
+
+1.  踩钉踩踏时触发，每个踩钉最多支持绑定12个MIDI信号
+
+2.  Expression Pedal踩踏时触发，每个Expression Pedal输入支持绑定1个MIDI CC信号
+
+3.  如果使用Dual Channels Footswitch EXP，可为每个通道分别绑定1个MIDI CC信号
+
+4.  Preset加载时触发，支持绑定最多12个MIDI信号
+
+#### MIDI信号参数设置：
+
+1.  CC信号
+
+    -   Channel通道：0-16
+
+    -   CC\#：0-127
+
+    -   Value值：0-127
+
+2.  CC Toggle信号
+
+    -   Channel通道：0-16
+
+    -   CC\#：0-127
+
+    -   Min Value最小值：0-127
+
+    -   Max Value最大值：0-127
+
+3.  PC信号
+
+    -   Channel通道：0-16
+
+    -   BANK CC\#0：0-127
+
+    -   BANK CC\#32: 0-127
+
+    -   Program值：0-127
+
+## MIDI In
+
+如果您希望通过其他设备发送MIDI指令来控制Xrecer效果器，可参考下方的指令集
+
+<table><tbody><tr className="odd"><td><strong>切换Preset</strong></td><td></td></tr><tr className="even"><td>CC#0 Value 0-127</td><td>设置【Preset起始值】为Value * 16</td></tr><tr className="odd"><td>CC#32 Value 0-127</td><td>切换Preset为：Value +【Preset起始值】值</td></tr><tr className="even"><td><strong>踏板和踩钉</strong></td><td></td></tr><tr className="odd"><td>CC#1 Value 0-127</td><td>映射为Expression Pedal1 - Channel 1的值0-100</td></tr><tr className="even"><td>CC#2 Value 0-127</td><td>映射为Expression Pedal1 - Channel 2的值0-100</td></tr><tr className="odd"><td>CC#3 Value 0-127</td><td>映射为Expression Pedal2 - Channel 1的值0-100</td></tr><tr className="even"><td>CC#4 Value 0-127</td><td>映射为Expression Pedal2 - Channel 2的值0-100</td></tr><tr className="odd"><td>CC#31 Value 0</td><td>单击踩钉1</td></tr><tr className="even"><td>CC#31 Value 1</td><td>单击踩钉2</td></tr><tr className="odd"><td>CC#31 Value 2</td><td>单击踩钉3</td></tr><tr className="even"><td>CC#31 Value 3</td><td>单击踩钉4</td></tr><tr className="odd"><td>CC#31 Value 4</td><td>单击踩钉5</td></tr><tr className="even"><td>CC#31 Value 5</td><td>单击踩钉6</td></tr><tr className="odd"><td>CC#31 Value 6</td><td>单击踩钉7</td></tr><tr className="even"><td>CC#31 Value 7</td><td>单击踩钉8</td></tr><tr className="odd"><td>CC#31 Value 8</td><td>单击踩钉9</td></tr><tr className="even"><td>CC#31 Value 9</td><td>单击踩钉10</td></tr><tr className="odd"><td>CC#30</td><td><p>Value 0-7：对应SceneA1-H1，</p><p>Value 8-15：对应SceneA2-H2，</p></td></tr><tr className="even"><td>CC#44</td><td><p>Value 0/1/2: 设置Global/Preset/Scene</p><p>Value 10-127: 设置【BPM起始值】为Value + 30</p></td></tr><tr className="odd"><td>CC#45</td><td>Value 0-127: 设置BPM为【BPM起始值】+Value</td></tr><tr className="even"><td>CC#46 Value 0-3</td><td><p>·CC#46 value 0时切换到Preset模式</p><p>·CC#46 value 1时切换到Scene模式</p><p>·CC#46 value 2时切换到Stomp模式</p><p>·CC#46 value 3时切换到Combo模式</p></td></tr><tr className="odd"><td><strong>LOOPER</strong></td><td></td></tr><tr className="even"><td>CC#47 Value任意</td><td>开关Looper界面</td></tr><tr className="odd"><td>CC#48 Value任意</td><td>开关单次触发(One Shot)</td></tr><tr className="even"><td>CC#49 Value任意</td><td>开关半速(Half Speed)</td></tr><tr className="odd"><td>CC#50 Value任意</td><td>录制/叠录(REC/Overdub)</td></tr><tr className="even"><td>CC#52 Value 任意</td><td>播放/停止(Playback/Stop)</td></tr><tr className="odd"><td>CC#54 Value 任意</td><td>清除(Delete)</td></tr><tr className="even"><td>CC#55 Value 0-7</td><td>播放Looper Track1-8</td></tr><tr className="odd"><td>CC#56 Value 0-7</td><td>停止Looper Track1-8</td></tr><tr className="even"><td>CC#57 Value 任意</td><td>复制一次(Doubler)</td></tr><tr className="odd"><td>CC#58 Value 任意</td><td>裁剪(Cut)</td></tr><tr className="even"><td>CC#59 Value 任意</td><td>启动/停止替换(Short Cut)</td></tr></tbody></table>

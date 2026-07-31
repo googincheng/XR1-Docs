@@ -1,0 +1,223 @@
+---
+sidebar_position: 12
+slug: /midi
+title: MIDI
+---
+
+# MIDI
+
+## MIDI Out
+
+On the FX Chain home screen, tap More > MIDI Out to open the MIDI output settings.
+
+<img
+  className="manual-figure"
+  src="/img/manual/image80.png"
+  alt="XRecer user interface"
+  width="600"
+/>
+
+#### XRecer can send MIDI messages from four sources:
+
+1.  A footswitch press. Each footswitch can be assigned up to 12 MIDI messages
+
+2.  An expression pedal movement. Each expression pedal input can be assigned one Control Change (CC) message
+
+3.  If you use a dual-channel EXP footswitch, each channel can be assigned one Control Change (CC) message
+
+4.  A preset load. Up to 12 MIDI messages can be assigned
+
+#### MIDI message parameters:
+
+1.  Control Change (CC) message
+    - MIDI channel: 0-16
+
+    - CC\#: 0-127
+
+    - Value: 0-127
+
+2.  CC Toggle message
+    - MIDI channel: 0-16
+
+    - CC\#: 0-127
+
+    - Minimum Value: 0-127
+
+    - Maximum Value: 0-127
+
+3.  Program Change (PC) message
+    - MIDI channel: 0-16
+
+    - Bank Select MSB (CC\#0): 0-127
+
+    - Bank Select LSB (CC\#32): 0-127
+
+    - Program Number: 0-127
+
+## MIDI In
+
+To control the XRecer effects processor by sending MIDI messages from another device, refer to the command set below.
+
+<table>
+  <tbody>
+    <tr className="odd">
+      <td>
+        <strong>Switch Preset</strong>
+      </td>
+      <td></td>
+    </tr>
+    <tr className="even">
+      <td>CC#0 Value 0-127</td>
+      <td>Set the [Preset Start Value] to Value * 16</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#32 Value 0-127</td>
+      <td>Switch to Preset: Value + [Preset Start Value]</td>
+    </tr>
+    <tr className="even">
+      <td>
+        <strong>Pedals and Footswitches</strong>
+      </td>
+      <td></td>
+    </tr>
+    <tr className="odd">
+      <td>CC#1 Value 0-127</td>
+      <td>Map to Expression Pedal1 - Channel 1 value 0-100</td>
+    </tr>
+    <tr className="even">
+      <td>CC#2 Value 0-127</td>
+      <td>Map to Expression Pedal1 - Channel 2 value 0-100</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#3 Value 0-127</td>
+      <td>Map to Expression Pedal2 - Channel 1 value 0-100</td>
+    </tr>
+    <tr className="even">
+      <td>CC#4 Value 0-127</td>
+      <td>Map to Expression Pedal2 - Channel 2 value 0-100</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#31 Value 0</td>
+      <td>Press footswitch 1</td>
+    </tr>
+    <tr className="even">
+      <td>CC#31 Value 1</td>
+      <td>Press footswitch 2</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#31 Value 2</td>
+      <td>Press footswitch 3</td>
+    </tr>
+    <tr className="even">
+      <td>CC#31 Value 3</td>
+      <td>Press footswitch 4</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#31 Value 4</td>
+      <td>Press footswitch 5</td>
+    </tr>
+    <tr className="even">
+      <td>CC#31 Value 5</td>
+      <td>Press footswitch 6</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#31 Value 6</td>
+      <td>Press footswitch 7</td>
+    </tr>
+    <tr className="even">
+      <td>CC#31 Value 7</td>
+      <td>Press footswitch 8</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#31 Value 8</td>
+      <td>Press footswitch 9</td>
+    </tr>
+    <tr className="even">
+      <td>CC#31 Value 9</td>
+      <td>Press footswitch 10</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#30</td>
+      <td>
+        <p>Value 0-7: Correspond to SceneA1-H1,</p>
+        <p>Value 8-15: Correspond to SceneA2-H2,</p>
+      </td>
+    </tr>
+    <tr className="even">
+      <td>CC#44</td>
+      <td>
+        <p>Value 0/1/2: Set Global/Preset/Scene</p>
+        <p>Value 10-127: Set the [BPM Start Value] to Value + 30</p>
+      </td>
+    </tr>
+    <tr className="odd">
+      <td>CC#45</td>
+      <td>Value 0-127: Set BPM to [BPM Start Value] + Value</td>
+    </tr>
+    <tr className="even">
+      <td>CC#46 Value 0-3</td>
+      <td>
+        <p>·CC#46 value 0 switches to Preset mode</p>
+        <p>·CC#46 value 1 switches to Scene mode</p>
+        <p>·CC#46 value 2 switches to Stomp mode</p>
+        <p>·CC#46 value 3 switches to Combo mode</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <tbody>
+    <tr className="odd">
+      <td>
+        <strong>LOOPER</strong>
+      </td>
+      <td></td>
+    </tr>
+    <tr className="even">
+      <td>CC#47 Any Value</td>
+      <td>Toggle the Looper screen</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#48 Any Value</td>
+      <td>Toggle One Shot</td>
+    </tr>
+    <tr className="even">
+      <td>CC#49 Any Value</td>
+      <td>Toggle Half Speed</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#50 Any Value</td>
+      <td>Record/Overdub (REC/Overdub)</td>
+    </tr>
+    <tr className="even">
+      <td>CC#52 Any Value</td>
+      <td>Playback/Stop</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#54 Any Value</td>
+      <td>Clear (Delete)</td>
+    </tr>
+    <tr className="even">
+      <td>CC#55 Value 0-7</td>
+      <td>Play Looper Track1-8</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#56 Value 0-7</td>
+      <td>Stop Looper Track1-8</td>
+    </tr>
+    <tr className="even">
+      <td>CC#57 Any Value</td>
+      <td>Duplicate Once (Doubler)</td>
+    </tr>
+    <tr className="odd">
+      <td>CC#58 Any Value</td>
+      <td>Trim (Cut)</td>
+    </tr>
+    <tr className="even">
+      <td>CC#59 Any Value</td>
+      <td>Start/Stop Replace (Short Cut)</td>
+    </tr>
+  </tbody>
+</table>
