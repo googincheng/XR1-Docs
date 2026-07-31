@@ -47,6 +47,11 @@
   vertical-align: middle;
 }
 
+/* Add comfortable horizontal breathing room to the main document content. */
+.theme-doc-markdown {
+  padding-inline: clamp(16px, 3vw, 48px);
+}
+
 /* Let manual tables use the full width of the document reading area. */
 .theme-doc-markdown table {
   display: table;
@@ -59,5 +64,11 @@
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-doc-markdown {
+    padding-inline: 8px;
   }
 }
