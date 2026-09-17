@@ -8,7 +8,7 @@ title: MIDI
 
 ## MIDI Out
 
-On the FX Chain home screen, tap More > MIDI Out to open the MIDI output settings.
+On the Signal Chain Home screen, tap More > MIDI Out to access the MIDI output settings.
 
 <ManualImage
   className="manual-figure"
@@ -19,44 +19,47 @@ On the FX Chain home screen, tap More > MIDI Out to open the MIDI output setting
 
 #### XRecer can send MIDI messages from four sources:
 
-1.  A footswitch press. Each footswitch can be assigned up to 12 MIDI messages
+1.  Footswitch: each footswitch can send up to 12 MIDI messages.
 
-2.  An expression pedal movement. Each expression pedal input can be assigned one Control Change (CC) message
+2.  Expression pedal: each EXP input can send one Control Change (CC) message.
 
-3.  If you use a dual-channel EXP footswitch, each channel can be assigned one Control Change (CC) message
+3.  Dual-channel EXP footswitch: each channel can send one CC message.
 
-4.  A preset load. Up to 12 MIDI messages can be assigned
+4.  Preset load: loading a Preset can send up to 12 MIDI messages.
 
-#### MIDI message parameters:
+#### MIDI message parameters
 
-1.  **Control Change (CC) message**
-    - **MIDI channel**: 0-16
+1.  Control Change (CC)
 
-    - **CC\#:** 0-127
+    -   MIDI channel: 0–16
 
-    - **Value**: 0-127
+    -   CC#: 0–127
 
-2.  **CC Toggle message**
-    - **MIDI channel**: 0-16
+    -   Value: 0–127
 
-    - **CC\#**: 0-127
+2.  CC Toggle
 
-    - **Minimum Value**: 0-127
+    -   MIDI channel: 0–16
 
-    - **Maximum Value**: 0-127
+    -   CC#: 0–127
 
-3.  **Program Change (PC) message**
-    - **MIDI channel**: 0-16
+    -   Minimum value: 0–127
 
-    - **Bank Select MSB (CC\#0)*:* 0-127
+    -   Maximum value: 0–127
 
-    - **Bank Select LSB (CC\#32):** 0-127
+3.  Program Change (PC)
 
-    - **Program Number**: 0-127
+    -   MIDI channel: 0–16
+
+    -   Bank Select MSB (CC#0): 0–127
+
+    -   Bank Select LSB (CC#32): 0–127
+
+    -   Program number: 0–127
 
 ## MIDI In
 
-To control the XRecer effects processor by sending MIDI messages from another device, refer to the command set below.
+To control XRecer from an external MIDI device, use the messages below.
 
 <table>
   <tbody>

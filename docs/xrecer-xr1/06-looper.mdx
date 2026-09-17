@@ -1,51 +1,51 @@
 ---
 sidebar_position: 7
 slug: /looper
-title: LOOPER
+title: Looper
 ---
 
-# LOOPER
+# Looper
 
-The Looper lets you record a performance in advance or live, then add layers of instruments and musical passages through successive overdub passes. This can create a rich, layered sound even during a solo performance.
+The Looper can record your performance in advance or live, continuously layering different instruments and sections. Even when you perform alone, it can create a rich live sound.
 
 <ManualImage className="manual-inline-icon" src="/img/manual/image54.png" alt="XRecer user interface" width="64"/> 
 ## Adding the Looper
 
-Add a Looper Effect anywhere in the FX Chain. Its position determines which Effects are applied to the recorded audio.
+Find the Looper effect and add it anywhere in the Signal Chain — it records the signal with the effects before it applied.
 
 <ManualImage className="manual-figure" src="/img/manual/image55.png" alt="XRecer user interface" width="600"/>
 
-## Looper
+## Looper Controls
 
-Tap Looper Effect to open the recording screen. By default, the controls shown below are assigned to the corresponding footswitches.
+Tap the Looper to access the recording screen. The controls below are assigned to the matching footswitches by default.
 
-1.  ### REC:
+1.  ### REC
 
     <ManualImage className="manual-figure" src="/img/manual/image56.png" alt="XRecer user interface" width="207"/>
 
-    -   **Initial state**: The button is labeled REC. Tap it to record a new loop.
+    -   Initial state: The button is labeled REC. Tap it to record a new loop.
 
-    -   **During the initial recording**: The button is labeled Overdub. Tap it to finish the initial recording, start loop playback, and begin an overdub pass.
+    -   Recording the first pass: the button shows Overdub. Tap it to save the track, start playback, and begin a new overdub.
 
-    -   **Loop available, stopped**: The button is labeled REC. Tap it to clear the existing loop and start a new recording.
+    -   Track recorded, stopped: the button shows REC. Tap it to clear the old track and start a new recording.
 
-    -   **Loop available, playing**: The button is labeled Overdub. Tap it to begin overdubbing at the current playback position.
+    -   Track recorded, playing: the button shows Overdub. Tap it to start overdubbing at the current playback position.
 
-    -   **Overdubbing during playback**: Tap to finish the current overdub layer and immediately begin a new overdub pass while the loop continues playing.
+    -   Overdubbing: tap to stop the current overdub, merge it with the previous tracks for playback, and start a new overdub.
 
 2.  ### Playback:
 
     <ManualImage className="manual-figure" src="/img/manual/image57.png" alt="XRecer user interface" width="207"/>
 
-    -   **Initial state**: The button is labeled Playback. Tap it to start loop playback. The button is disabled until a loop has been recorded.
+    -   Initial state: The button is labeled Playback. Tap it to start loop playback. The button is disabled until a loop has been recorded.
 
-    -   **Playing**: The button is labeled Stop. Tap it to stop loop playback.
+    -   Playing: the button shows Stop. Tap it to stop playback.
 
-    -   **Recording with playback stopped**: The button is labeled Playback. Tap it to finish recording and start loop playback.
+    -   Recording, playback stopped: the button shows Playback. Tap it to finish recording and start playback.
 
-    -   **Overdubbing during playback**: The button is labeled Stop. Tap it to stop loop playback.
+    -   Overdubbing: the button shows Stop. Tap it to stop playback.
 
-3.  ### Delete:
+3.  ### Delete
 
     <ManualImage className="manual-figure" src="/img/manual/image58.png" alt="XRecer user interface" width="207"/>
 
@@ -57,66 +57,66 @@ Tap Looper Effect to open the recording screen. By default, the controls shown b
 
     <ManualImage className="manual-figure" src="/img/manual/image59.png" alt="XRecer user interface" width="207"/>
 
-    - Stopped: Tap to duplicate the recorded loop.
+    -   Stopped: Tap to duplicate the recorded loop.
 
-    -   **Playing**: Tap to duplicate the recorded loop and extend its playback length.
+    -   Playing: tap to duplicate the recorded track and extend the playback time.
 
-    -   **Recording with playback stopped**: Tap to finish and save the recording, start loop playback, and begin overdubbing.
+    -   Recording, playback stopped: tap to stop and save the recording, play the previous track, and start overdubbing.
 
-    -   **Overdubbing during playback**: If the overdub exceeds the length of the original loop, tapping this control automatically duplicates and extends the original loop. For example, you can overdub a four-bar melody over a one-bar loop repeated four times without being limited by the original loop length.
+    -   Overdubbing: if the overdub runs longer than the original track, Doubler automatically copies and extends the original track. For example, you can layer a four-bar melody over a one-bar track repeated four times, without being limited by the original track length.
 
-    -   After duplication, tap Cut at any position to delete all audio after that point, allowing a custom loop length.
+    -   After duplicating, tap Cut at any position to delete the audio after that point — so you are not limited to a fixed length.
 
 5. ### Single Play
 
     <ManualImage className="manual-figure" src="/img/manual/image60.png" alt="XRecer user interface" width="207"/>
 
-    -   **Stopped**: Tap to play the current loop once.
+    -   Stopped: tap to play the loop once.
 
-    -   **Playing**: Tap to enable One Shot playback. Playback continues to the end of the current loop, then stops automatically.
+    -   Playing: tap to play to the end of the current pass, then stop.
 
-    -   **Recording with playback stopped**: Tap to finish and save the recording, then play the complete loop once.
+    -   Recording, playback stopped: tap to stop and save the recording, then play the merged track once.
 
-    -   **Overdubbing during playback**: Tap to finish and save the overdub, then stop playback when the loop reaches its end.
+    -   Overdubbing: tap to stop and save the recording; playback stops after the previous track finishes.
 
 6.  ### Half Time
 
     <ManualImage className="manual-figure" src="/img/manual/image61.png" alt="XRecer user interface" width="207"/>
 
-    - Tap to switch loop playback and recording to Half Speed.
+    - Tap to set playback and recording to half speed.
 
 7.  ### Short Cut
 
     <ManualImage className="manual-figure" src="/img/manual/image62.png" alt="XRecer user interface" width="207"/>
+    
+    - Tap to start recording a replacement track from the current playback position. Tap again to finish.
 
-    - Tap to begin recording at the current playback position, replacing the existing loop audio. Tap again to finish recording.
+## Parameters
 
-## Parameter Settings
+1.  Playback Level: −50 dB to 0 dB
 
--  **Playback Level**: -50 dB to 0 dB
+2.  Doubler Level: −50 dB to 0 dB. At −5 dB, each new layer reduces the previous layer by 5 dB.
 
--  **Doubler Level**: -50 dB to 0 dB. If set to -5 dB, each overdub pass attenuates the previous layer by 5 dB.
+3.  High Pass: attenuates frequencies below the selected frequency.
 
--  **High Pass**: Sets the high-pass filter frequency; attenuates loop playback below the selected frequency.
+4.  Low Pass: attenuates frequencies above the selected frequency.
 
--  **Low Pass**: Sets the low-pass filter frequency; attenuates loop playback above the selected frequency.
+5.  Threshold: when enabled, recording starts only after the input exceeds the threshold, instead of the instant you tap REC.
 
--  **Threshold**: When enabled, recording starts when the input level exceeds Threshold rather than immediately when you tap REC.
-
--  **Quantize**: When enabled, the beginning and end of the recorded loop are trimmed automatically to align with the configured beat.
+6.  Quantize: when enabled, the start and end of the recording are trimmed to the selected beat.
 
 ## Loop File
 
-Recorded loops can be saved as Loop Files. Up to eight Loop Files are supported.
+You can save a recording as a Loop File. Up to eight Loop Files are supported.
 
-### Saving a Loop File:
+### Save a Loop File
 
-1. Tap Loop File at the top
+1.  Tap Loop File at the top.
 
     <ManualImage className="manual-figure" src="/img/manual/image63.png" alt="XRecer user interface" width="100"/>
 
-2. Select a File slot in the fourth chain
+2.  Select a slot.
 
     <ManualImage className="manual-figure" src="/img/manual/image20.png" alt="XRecer user interface" width="400"/>
 
-3.  Add the Loop File to the FX Chain
+3.  Add the Loop File to the Signal Chain.
